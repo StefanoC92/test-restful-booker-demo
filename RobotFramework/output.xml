@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on linux)" generated="2025-04-18T16:39:05.130210" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework">
+<suite id="s1-s1" name="HomePage" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework/HomePage">
+<suite id="s1-s1-s1" name="Test Home Page" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework/HomePage/test_home_page.robot">
+<test id="s1-s1-s1-t1" name="Test Title" line="12">
+<kw name="Navigate to Home Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-18T16:39:05.379487" level="INFO">Opening browser 'chrome' to base url 'https://automationintesting.online/'.</msg>
+<msg time="2025-04-18T16:39:05.379592" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-18T16:39:05.379675" level="FAIL">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</msg>
+<arg>url=https://automationintesting.online/</arg>
+<arg>browser=chrome</arg>
+<arg>options=${HEADLESS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-04-18T16:39:05.379265" elapsed="0.006355">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+</kw>
+<doc>Keyword to open the chrome browser</doc>
+<status status="FAIL" start="2025-04-18T16:39:05.378714" elapsed="0.007213">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-18T16:39:05.386320" elapsed="0.000181"/>
+</kw>
+<doc>Test Case to check the title of the home page</doc>
+<status status="FAIL" start="2025-04-18T16:39:05.378050" elapsed="0.008616">Setup failed:
+AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+</test>
+<doc>Test Suite for testing the home page</doc>
+<status status="FAIL" start="2025-04-18T16:39:05.162970" elapsed="0.224111"/>
+</suite>
+<status status="FAIL" start="2025-04-18T16:39:05.162282" elapsed="0.225323"/>
+</suite>
+<status status="FAIL" start="2025-04-18T16:39:05.131785" elapsed="0.256292"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="RobotFramework" id="s1" pass="0" fail="1" skip="0">RobotFramework</stat>
+<stat name="HomePage" id="s1-s1" pass="0" fail="1" skip="0">RobotFramework.HomePage</stat>
+<stat name="Test Home Page" id="s1-s1-s1" pass="0" fail="1" skip="0">RobotFramework.HomePage.Test Home Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
