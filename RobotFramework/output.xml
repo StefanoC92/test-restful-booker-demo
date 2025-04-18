@@ -1,48 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.3 on linux)" generated="2025-04-18T16:39:05.130210" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.3 on linux)" generated="2025-04-18T16:44:32.657722" rpa="false" schemaversion="5">
 <suite id="s1" name="RobotFramework" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework">
 <suite id="s1-s1" name="HomePage" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework/HomePage">
 <suite id="s1-s1-s1" name="Test Home Page" source="/home/stefanocast/test_automation_practice/test-restful-booker-demo/RobotFramework/HomePage/test_home_page.robot">
-<test id="s1-s1-s1-t1" name="Test Title" line="12">
+<test id="s1-s1-s1-t1" name="Test Title" line="11">
 <kw name="Navigate to Home Page" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-18T16:39:05.379487" level="INFO">Opening browser 'chrome' to base url 'https://automationintesting.online/'.</msg>
-<msg time="2025-04-18T16:39:05.379592" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-04-18T16:39:05.379675" level="FAIL">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</msg>
+<msg time="2025-04-18T16:44:32.908800" level="INFO">Opening browser 'headlesschrome' to base url 'https://automationintesting.online/'.</msg>
 <arg>url=https://automationintesting.online/</arg>
-<arg>browser=chrome</arg>
-<arg>options=${HEADLESS}</arg>
+<arg>browser=headlesschrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-04-18T16:39:05.379265" elapsed="0.006355">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+<status status="PASS" start="2025-04-18T16:44:32.908611" elapsed="1.877898"/>
 </kw>
 <doc>Keyword to open the chrome browser</doc>
-<status status="FAIL" start="2025-04-18T16:39:05.378714" elapsed="0.007213">AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+<status status="PASS" start="2025-04-18T16:44:32.908072" elapsed="1.878821"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-18T16:44:34.808455" level="INFO">Page title is 'Restful-booker-platform demo'.</msg>
+<arg>Restful-booker-platform demo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-04-18T16:44:34.787369" elapsed="0.021263"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-18T16:39:05.386320" elapsed="0.000181"/>
+<status status="PASS" start="2025-04-18T16:44:34.809153" elapsed="0.089018"/>
 </kw>
 <doc>Test Case to check the title of the home page</doc>
-<status status="FAIL" start="2025-04-18T16:39:05.378050" elapsed="0.008616">Setup failed:
-AttributeError: 'Options' object has no attribute '--headless --no-sandbox --disable-dev-shm-usage'</status>
+<status status="PASS" start="2025-04-18T16:44:32.907448" elapsed="1.990895"/>
 </test>
 <doc>Test Suite for testing the home page</doc>
-<status status="FAIL" start="2025-04-18T16:39:05.162970" elapsed="0.224111"/>
+<status status="PASS" start="2025-04-18T16:44:32.686283" elapsed="2.213066"/>
 </suite>
-<status status="FAIL" start="2025-04-18T16:39:05.162282" elapsed="0.225323"/>
+<status status="PASS" start="2025-04-18T16:44:32.685593" elapsed="2.214699"/>
 </suite>
-<status status="FAIL" start="2025-04-18T16:39:05.131785" elapsed="0.256292"/>
+<status status="PASS" start="2025-04-18T16:44:32.658508" elapsed="2.242279"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="RobotFramework" id="s1" pass="0" fail="1" skip="0">RobotFramework</stat>
-<stat name="HomePage" id="s1-s1" pass="0" fail="1" skip="0">RobotFramework.HomePage</stat>
-<stat name="Test Home Page" id="s1-s1-s1" pass="0" fail="1" skip="0">RobotFramework.HomePage.Test Home Page</stat>
+<stat name="RobotFramework" id="s1" pass="1" fail="0" skip="0">RobotFramework</stat>
+<stat name="HomePage" id="s1-s1" pass="1" fail="0" skip="0">RobotFramework.HomePage</stat>
+<stat name="Test Home Page" id="s1-s1-s1" pass="1" fail="0" skip="0">RobotFramework.HomePage.Test Home Page</stat>
 </suite>
 </statistics>
 <errors>

@@ -6,7 +6,6 @@ Test Setup       Navigate to Home Page
 Test Teardown    Close Browser
 
 *** Variables ***
-${HEADLESS}    --headless --no-sandbox --disable-dev-shm-usage
 
 *** Test Cases ***
 Test Title
@@ -16,5 +15,5 @@ Test Title
 *** Keywords ***
 Navigate to Home Page
     [Documentation]    Keyword to open the chrome browser
-    Open Browser    url=https://automationintesting.online/    browser=chrome    options=${HEADLESS}
+    Open Browser    url=https://automationintesting.online/    browser=headlesschrome
 
