@@ -36,10 +36,10 @@ def chrome_driver():
 
     options = Options()
     #Comment following 2 lines to Run with Chrome GUI
-    # options.add_argument('--headless')
-    # options.add_argument('--no-sandbox')
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
     options.add_argument('--start-maximized')
-    # options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-dev-shm-usage')
     #Create instance of Chrome webdriver
     driver = webdriver.Chrome(options=options)
 
